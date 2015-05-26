@@ -37,6 +37,16 @@ public class Main {
             if (t >= max) {
 
                 max = t;
+            }
+
+                //Третье задание
+
+                int z = 1;
+
+                for(int i = 0;i<=k.length -1; i++)
+
+                byte k[] = new byte[];
+
                
 
 
