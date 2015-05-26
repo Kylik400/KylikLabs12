@@ -14,8 +14,10 @@ public class Main {
         String s4 = "Четвертая четверть";
 
         p2.setName("Точка");
+        p2.setX(2.5);
 
-        
+        if (p2.getX() < p2.getY() )
+            System.out.println("Точка" + s3);
 
     }
 
