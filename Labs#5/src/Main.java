@@ -1,27 +1,42 @@
+import java.io.BufferedReader;
+import java.io.IOException;
+import java.io.InputStreamReader;
+
 /**
  * Created by Source_it_6 on 26.05.2015.
  */
 public class Main {
 
-    public static void main(String[] args) {
 
-        Point p1 = new Point(2.4,3.2);
-        Point p2 = new Point();
 
-        String s1 = "Первая четверть";
-        String s2 = "Вторая четверть";
-        String s3 = "Третья четверть";
-        String s4 = "Четвертая четверть";
+    public static void main(String[] args) throws IOException {
+        Point s = new Point();
+        Field n = new Field();
 
-        p2.setName("Точка");
-        p2.setX(2.5);
+        s.setX(2.1);
+        s.setY(4.6);
 
-        if (p2.getX() < p2.getY() )
-            System.out.println("Точка" + s3);
+        BufferedReader r  = new BufferedReader(new InputStreamReader(System.in));
+
+        
+
+
+
+
+        if (s.getX()> 0 && s.getY()>0)
+            System.out.println(n.getB());
+
+        if (s.getX()< 0 && s.getY()<0)
+            System.out.println(n.getZ());
+
+        if (s.getX()< 0 && s.getY()>0)
+            System.out.println(n.getA());
+
+        if (s.getX()> 0 && s.getY()<0)
+            System.out.println(n.getB());
+
+
 
     }
-
-
-
     }
 

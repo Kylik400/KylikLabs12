@@ -13,49 +13,58 @@ public class Main {
             if (s[i] == 0) {
                 counter++;
 
-                System.out.println(s[i]);
+
 
             }
 
         }
-        System.out.println(counter);
+        System.out.println("Колличество нулевых елементов в массиве s[] = " + counter);
 
 
         //Второе задание
 
         int q[] = {2, 5, 6, 7, 8};
 
+        int max = 0;
         int t = 0;
 
 
-        for (int i = 0; i <= s.length; i++) {
+        for (int j = 0; j < q.length; j++) {
 
-            int max = q[0];
-            t = q[i];
+             max = q[0];
+            t = q[j];
 
 
-            if (t >= max) {
+            if (max < t) {
 
                 max = t;
-            }
-
-                //Третье задание
-
-
-
-
-
-               
-
 
             }
+            }
+        System.out.println("Максимальное значение массива q[] = " + max);
+
+
+            //Третье задание
+
+        int n = 67;
+        byte u[] = new byte[4] ;
+
+        for(int i  = 0; i < u.length;i++){
+
+            u[i] = (byte) (n/4);
+            System.out.println("Значение типа byte = " + (u[i]) );
+        }
+
+            //Четвертое задание
+
+
 
         }
 
 
 
     }
-}
+
 
 
 
