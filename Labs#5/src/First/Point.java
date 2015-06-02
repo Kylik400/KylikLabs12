@@ -7,9 +7,6 @@ import java.io.IOException;
 import java.io.InputStreamReader;
 import java.util.Scanner;
 
-/**
- * Created by Source_it_6 on 26.05.2015.
- */
 public class Point {
 
     private int x;
