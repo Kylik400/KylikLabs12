@@ -1,6 +1,9 @@
 package First;
+import Second.*;
+
 import java.io.IOException;
 import java.lang.*;
+import java.io.*;
 
 
 public class Main {
@@ -11,6 +14,9 @@ public class Main {
 
 
         Point f = new Point();
+
+
+        Second.File.out.println(f);
 
     }
     }
