@@ -1,3 +1,4 @@
+import java.util.Random;
 
 public class Main {
 
@@ -56,6 +57,29 @@ public class Main {
         }
 
             //Четвертое задание
+
+
+            int[][] p = new int[8][5];
+
+
+            Random r = new Random();
+
+            int r1 = r.nextInt(11) + 90;
+
+
+            int l,j = 0;
+
+            for(int i = 0; i<8;i++){
+                for( j = 0; j < 5;j++)
+
+                 p[i][j] = r1;
+
+                System.out.print("Случайное число" + p[i][j] + " ");
+                System.out.println();
+            }
+
+        System.out.println("Пятое задание");
+
 
 
 
