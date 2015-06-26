@@ -14,15 +14,13 @@ public class Main {
             if (s[i] == 0) {
                 counter++;
 
-
-
             }
 
         }
-        System.out.println("РљРѕР»Р»РёС‡РµСЃС‚РІРѕ РЅСѓР»РµРІС‹С… РµР»РµРјРµРЅС‚РѕРІ РІ РјР°СЃСЃРёРІРµ s[] = " + counter);
+        System.out.println("Колличество нулевых елементов в массиве s[] = " + counter);
 
 
-        //Р’С‚РѕСЂРѕРµ Р·Р°РґР°РЅРёРµ
+        //Второе задание
 
         int q[] = {2, 5, 6, 7, 8};
 
@@ -32,7 +30,7 @@ public class Main {
 
         for (int j = 0; j < q.length; j++) {
 
-             max = q[0];
+            max = q[0];
             t = q[j];
 
 
@@ -41,11 +39,11 @@ public class Main {
                 max = t;
 
             }
-            }
-        System.out.println("РњР°РєСЃРёРјР°Р»СЊРЅРѕРµ Р·РЅР°С‡РµРЅРёРµ РјР°СЃСЃРёРІР° q[] = " + max);
+        }
+        System.out.println("Максимальное значение массива q[] = " + max);
 
 
-            //РўСЂРµС‚СЊРµ Р·Р°РґР°РЅРёРµ
+        //Третье задание
 
         int n = 67;
         byte u[] = new byte[4] ;
@@ -53,37 +51,37 @@ public class Main {
         for(int i  = 0; i < u.length;i++){
 
             u[i] = (byte) (n/4);
-            System.out.println("Р—РЅР°С‡РµРЅРёРµ С‚РёРїР° byte = " + (u[i]) );
+            System.out.println("Значение типа byte = " + (u[i]) );
         }
 
-            //Р§РµС‚РІРµСЂС‚РѕРµ Р·Р°РґР°РЅРёРµ
-
-
-            int[][] p = new int[8][5];
-
-
-            Random r = new Random();
-
-            int r1 = r.nextInt(11) + 90;
-
-
-            int l,j = 0;
-
-            for(int i = 0; i<8;i++){
-                for( j = 0; j < 5;j++)
-
-                 p[i][j] = r1;
-
-                System.out.print("РЎР»СѓС‡Р°Р№РЅРѕРµ С‡РёСЃР»Рѕ" + p[i][j] + " ");
-                System.out.println();
-            }
-
-        System.out.println("РџСЏС‚РѕРµ Р·Р°РґР°РЅРёРµ");
 
 
 
+            //Четвертое задание
 
+        int[][] p = new int[8][5];
+
+
+        Random r = new Random();
+
+        int r1 = r.nextInt(100);
+
+        if(r1<10)
+            r1 = 10;
+
+        for(int i = 0; i<8;i++) {
+            for ( int j = 0; j < 5; j++)
+
+                p[i][j] = r1;
+
+            System.out.print("Случайное число" + p[i][j] + " ");
+            System.out.println();
         }
+
+
+
+
+    }
 
 
 
