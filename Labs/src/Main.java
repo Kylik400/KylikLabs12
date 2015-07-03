@@ -118,22 +118,20 @@ public class Main {
         //2)
         Random m = new Random();
 
-        int r1 = m.nextInt(10) +1;
-
-        int[][] b = new int[10][r1];
 
 
+        int[][] b = new int[10][];
 
+        for(int i =0;i<10;i++){
 
+            int c = 0;
 
+            int r1 = m.nextInt(9) +1;
 
-
-
-        for(int i =0;i<9;i++  ){
-
-            i = b[9][r1];
+             b[i][r1] = c;
 
             System.out.println("Массив \"Случайный\" " + b);
+            c++;
 
 
         }
