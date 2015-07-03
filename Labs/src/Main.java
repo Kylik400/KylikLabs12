@@ -1,10 +1,11 @@
+import java.util.Arrays;
 import java.util.Random;
 
 public class Main {
 
     public static void main(String[] args) {
 
-
+/*
         int s[] = {0, 1, 2, 3, 4, 5, 6, 7, 8, 9,};
         int counter = 0;
 
@@ -57,35 +58,89 @@ public class Main {
 
 
 
-            //Четвертое задание
+            //Пятое задание
 
         int[][] p = new int[8][5];
 
-
         Random r = new Random();
 
-        int r1 = r.nextInt(100);
-
-        if(r1<10)
-            r1 = 10;
-
         for(int i = 0; i<8;i++) {
-            for ( int j = 0; j < 5; j++)
+
+            for ( int j = 0; j < 5; j++) {
+
+                int r1 = r.nextInt(89)+ 10;
 
                 p[i][j] = r1;
 
-            System.out.print("Случайное число" + p[i][j] + " ");
+                System.out.print("Случайное число " + p[i][j] + " ");
+            }
             System.out.println();
         }
 
+            //Шестое задание
+
+        int w[][] = new int [3][4];
+        int e[][] = new int [6][10];
+
+        int counter1 = 0;*/
 
 
+
+
+
+
+
+
+
+        //Домашнее Задание
+        //1)
+
+      //  int[] a = {0,1,2,3,4,5,6,7,8,9};
+
+        //for(int i = 0; i< a.length; i++) {
+
+
+           // int b = a[i];
+
+           // System.out.println("Элемент массива " + a[i] + " = " + b);
+
+
+            //int[] arr = {1,2,3,4,5,6,7,8,9,10,11};
+           // for (int i = 0; arr.length/2 > i; i++) {
+               // int tmp = arr[i];
+               // arr[i] = arr[arr.length - i - 1];
+               // arr[arr.length - i - 1] = tmp;
+          //  }
+          //  System.out.println(Arrays.toString(arr));
+
+
+
+        //2)
+        Random m = new Random();
+
+        int r1 = m.nextInt(10) +1;
+
+        int[][] b = new int[10][r1];
+
+
+
+
+
+
+
+
+        for(int i =0;i<9;i++  ){
+
+            i = b[9][r1];
+
+            System.out.println("Массив \"Случайный\" " + b);
+
+
+        }
 
     }
 
-
-
-    }
+}
 
 
 
