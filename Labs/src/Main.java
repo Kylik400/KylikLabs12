@@ -124,9 +124,9 @@ public class Main {
         for(int i =0;i<10;i++){
             for(int j = 0;j<r1;j++) {
 
-                b[i][r1] = c;
+                b[i][j] = c;
 
-                System.out.print("Массив \"Случайный\" " + b[i][r1]);
+                System.out.print("Массив \"Случайный\" " + b[i][j]);
             }
             System.out.println();
 
