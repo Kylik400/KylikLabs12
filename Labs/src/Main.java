@@ -142,7 +142,7 @@ public class Main {
 
                 System.out.println(k + " " + v + " : " + x + " " + y);
 
-                if (k == x && v == y) {
+                if (k == y && v == x) {
                     counter3++;
                     System.out.println("—четчик " + counter3);
                 }
