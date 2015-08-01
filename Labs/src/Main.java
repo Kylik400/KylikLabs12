@@ -5,7 +5,7 @@ public class Main {
 
     public static void main(String[] args) {
 
-/*
+
         int s[] = {0, 1, 2, 3, 4, 5, 6, 7, 8, 9,};
         int counter = 0;
 
@@ -82,7 +82,7 @@ public class Main {
         int w[][] = new int [3][4];
         int e[][] = new int [6][10];
 
-        int counter1 = 0;*/
+        int counter1 = 0;
 
 
 
@@ -132,6 +132,22 @@ public class Main {
 
 
         }
+
+        //3)
+
+            int[]u ={1,2,3,5,6,7,8,9,10,11,12};
+
+        int a = 1;
+
+                    for(int i = 0; i < u.length;i++){
+
+
+                        a = a + u[i];
+
+                        System.out.println("Последовательность " + a);
+
+
+                    }
 
     }
 
