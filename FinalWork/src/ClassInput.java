@@ -8,14 +8,14 @@ import java.io.InputStreamReader;
 public class ClassInput {
 
     ClassInput() throws IOException {
-        System.out.println("Ввдеите название валюты");
+        System.out.println("Р’РІРґРµРёС‚Рµ РЅР°Р·РІР°РЅРёРµ РІР°Р»СЋС‚С‹");
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
         String InputName = br.readLine();
 
-        System.out.println("Введите колличество конвертируемыых единиц");
+        System.out.println("Р’РІРµРґРёС‚Рµ РєРѕР»Р»РёС‡РµСЃС‚РІРѕ РєРѕРЅРІРµСЂС‚РёСЂСѓРµРјС‹С‹С… РµРґРёРЅРёС†");
         String Number = br.readLine();
         int numb = Integer.parseInt(Number);
-        System.out.println("Введите то во что хотите конвертировать");
+        System.out.println("Р’РІРµРґРёС‚Рµ С‚Рѕ РІРѕ С‡С‚Рѕ С…РѕС‚РёС‚Рµ РєРѕРЅРІРµСЂС‚РёСЂРѕРІР°С‚СЊ");
 
     }
 }
