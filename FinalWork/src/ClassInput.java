@@ -15,13 +15,19 @@ public class ClassInput extends Lists {
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
         String InputName = br.readLine();
 
-        if(InputName.equals(getCurencyHolder().get(0))){
-            
+        for(int i = 0; i<getCurencyHolder().size();i++)
+
+        if(InputName.equals(getCurencyHolder().get(i))){
+
         }
 
         System.out.println("Введите колличество конвертируемыых единиц");
+
         String Number = br.readLine();
         int numb = Integer.parseInt(Number);
+
+        
+
         System.out.println("Введите то во что хотите конвертировать");
 
     }
