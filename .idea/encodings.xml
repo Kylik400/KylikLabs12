@@ -2,6 +2,7 @@
 <project version="4">
   <component name="Encoding" useUTFGuessing="true" native2AsciiForPropertiesFiles="false">
     <file url="file://$PROJECT_DIR$/FinalWork/src/ClassInput.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/FinalWork/src/Main.java" charset="windows-1251" />
     <file url="file://$PROJECT_DIR$/Labs/src/Main.java" charset="windows-1251" />
     <file url="PROJECT" charset="windows-1251" />
   </component>

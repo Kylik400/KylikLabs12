@@ -6,6 +6,10 @@ import java.io.IOException;
 import java.io.InputStream;
 import java.net.URL;
 
+import java.util.ArrayList;
+import java.util.List;
+import java.util.Map;
+
 import com.sun.org.apache.xpath.internal.SourceTree;
 import org.w3c.dom.NodeList;
 import org.xml.sax.SAXException;
@@ -28,30 +32,39 @@ public class Main {
 
         NodeList nodeList = doc.getElementsByTagName("Results").item(0).getChildNodes();
 
+
         String currency = "";
         double buy = 0;
-        double sell = 0;
+        double sale = 0;
 
+        ;
+        List<Double> listBuy = new ArrayList<Double>();
+        List<Double> listSale = new ArrayList<Double>();
+
+
+        System.out.println("Название валюты     " + "     Покупка    " + "       Продажа");
         for (int i = 0; i < nodeList.getLength(); i++){
             Element element = (Element) nodeList.item(i);
 
-                currency = element.getElementsByTagName("Currency").item(0).getChildNodes().item(0).getNodeValue();
-               buy = Double.parseDouble(element.getElementsByTagName("Buy").item(0).getChildNodes().item(0).getNodeValue());
-                sell = Double.parseDouble(element.getElementsByTagName("Sell").item(0).getChildNodes().item(0).getNodeValue());
+            currency = element.getElementsByTagName("Currency").item(0).getChildNodes().item(0).getNodeValue();
+            ClassInput.Listcurrency().add(currency);
+            buy = Double.parseDouble(element.getElementsByTagName("Buy").item(0).getChildNodes().item(0).getNodeValue());
+            listBuy.add(buy);
+            sale = Double.parseDouble(element.getElementsByTagName("Sale").item(0).getChildNodes().item(0).getNodeValue());
+            listSale.add(sale);
 
-                System.out.println(currency +  " " + buy + " " + sell );
-
-
-
-
+               // System.out.println(currency +  "                       " + buy + "         " + sale );
         }
 
-
-
+            for(String x: ClassInput.Listcurrency()){
+                System.out.println(x);
+            }
 
 
 
 
 }
+
+
 
 }
