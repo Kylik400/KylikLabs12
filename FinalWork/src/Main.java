@@ -37,9 +37,6 @@ public class Main {
         double buy = 0;
         double sale = 0;
 
-        ;
-        List<Double> listBuy = new ArrayList<Double>();
-        List<Double> listSale = new ArrayList<Double>();
 
 
         System.out.println("Название валюты     " + "     Покупка    " + "       Продажа");
@@ -47,16 +44,16 @@ public class Main {
             Element element = (Element) nodeList.item(i);
 
             currency = element.getElementsByTagName("Currency").item(0).getChildNodes().item(0).getNodeValue();
-            ClassInput.Listcurrency().add(currency);
+            Lists.addCurrency(currency);
             buy = Double.parseDouble(element.getElementsByTagName("Buy").item(0).getChildNodes().item(0).getNodeValue());
-            listBuy.add(buy);
+            Lists.addBuy(buy);
             sale = Double.parseDouble(element.getElementsByTagName("Sale").item(0).getChildNodes().item(0).getNodeValue());
-            listSale.add(sale);
+            Lists.addSale(sale);
 
                // System.out.println(currency +  "                       " + buy + "         " + sale );
         }
 
-            for(String x: ClassInput.Listcurrency()){
+            for(String x: Lists.getCurencyHolder()){
                 System.out.println(x);
             }
 
