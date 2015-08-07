@@ -39,7 +39,7 @@ public class Main {
 
 
 
-        System.out.println("Название валюты     " + "     Покупка    " + "       Продажа");
+       // System.out.println("Название валюты     " + "     Покупка    " + "       Продажа");
         for (int i = 0; i < nodeList.getLength(); i++){
             Element element = (Element) nodeList.item(i);
 
@@ -53,12 +53,12 @@ public class Main {
                // System.out.println(currency +  "                       " + buy + "         " + sale );
         }
 
-            for(String x: Lists.getCurencyHolder()){
+           /* for(String x: Lists.getCurencyHolder()){
                 System.out.println(x);
-            }
+            }*/
 
 
-
+            ClassInput classInput = new ClassInput();
 
 }
 

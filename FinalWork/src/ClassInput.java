@@ -9,26 +9,59 @@ import java.util.List;
  */
 public class ClassInput extends Lists {
 
+    private static double BuyIn = 0;
+    private static double SaleIn = 0;
+    private static double Count = 0;
+    private boolean value;
+
+
 
     public ClassInput() throws IOException {
-        System.out.println("Р’РІРґРµРёС‚Рµ РЅР°Р·РІР°РЅРёРµ РІР°Р»СЋС‚С‹");
+        System.out.println("Введите название конвертируемой валюты");
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
-        String InputName = br.readLine();
+        String InputName1 = br.readLine();
 
-        for(int i = 0; i<getCurencyHolder().size();i++)
+        for(int i = 0; i<getCurencyHolder().size();i++) {
 
-        if(InputName.equals(getCurencyHolder().get(i))){
+            if (InputName1.equals(getCurencyHolder().get(i))) {
 
+                BuyIn = getBuyHolder().get(i);
+                SaleIn = getSaleHolder().get(i);
+                value = true;
+
+            }
+            else {
+                System.out.println("Введенный тип валюты не найден");
+                value = false;
+            }
         }
 
-        System.out.println("Р’РІРµРґРёС‚Рµ РєРѕР»Р»РёС‡РµСЃС‚РІРѕ РєРѕРЅРІРµСЂС‚РёСЂСѓРµРјС‹С‹С… РµРґРёРЅРёС†");
+        System.out.println("Введите колличество конвертируемыых единиц");
 
         String Number = br.readLine();
-        int numb = Integer.parseInt(Number);
+        double numb = Double.parseDouble(Number);
 
-        
+        Count = numb;
 
-        System.out.println("Р’РІРµРґРёС‚Рµ С‚Рѕ РІРѕ С‡С‚Рѕ С…РѕС‚РёС‚Рµ РєРѕРЅРІРµСЂС‚РёСЂРѕРІР°С‚СЊ");
+        System.out.println("Введите то во что хотите конвертировать");
+
+        String InputName2 = br.readLine();
+
+        if(value == true) {
+            System.out.println("Полученное значение ===>   " + GetValue());
+
+        }
+            else System.out.println("Введенный тип валюты не найден");
 
     }
+
+    public static double GetValue(){
+        double v = Count * SaleIn;
+        return v;
+    }
+
+
+
+
+
 }
