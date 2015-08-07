@@ -8,6 +8,9 @@ public class Lists {
 
 
 
+
+
+
     private static final List<String> CURENCY_HOLDER = new ArrayList<>();
     public static List<String> getCurencyHolder() {
         return CURENCY_HOLDER;

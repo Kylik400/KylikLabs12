@@ -20,6 +20,24 @@ import org.w3c.dom.Document;
 public class Main {
     public static void main(String[] args) throws IOException, ParserConfigurationException, SAXException {
 
+        List<String> CurrList = new ArrayList<String>();
+
+        CurrList.add("Доллар США");
+        CurrList.add("Европейская составная единица");
+        CurrList.add("Российский рубль");
+        CurrList.add("Английский фунт стерлингов");
+        CurrList.add("Австралийский доллар");
+        CurrList.add("Белорусский рубль");
+        CurrList.add("Форинт");
+        CurrList.add("Датская крона");
+        CurrList.add("Канадский доллар");
+        CurrList.add("Юань");
+        CurrList.add("Норвежская крона");
+        CurrList.add("Злотый");
+        CurrList.add("Чешская крона");
+        CurrList.add("Шведская крона");
+        CurrList.add("Швейцарский франк");
+        CurrList.add("Иена");
 
         URL url = new URL("http://cashexchange.com.ua/XmlApi.ashx");
         InputStream in = new BufferedInputStream(url.openStream());
@@ -53,9 +71,7 @@ public class Main {
                // System.out.println(currency +  "                       " + buy + "         " + sale );
         }
 
-           /* for(String x: Lists.getCurencyHolder()){
-                System.out.println(x);
-            }*/
+
 
 
             ClassInput classInput = new ClassInput();

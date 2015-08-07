@@ -17,6 +17,12 @@ public class ClassInput extends Lists {
 
 
     public ClassInput() throws IOException {
+        System.out.println("—писок доступных валют");
+        for(String i: getCurencyHolder()){
+            System.out.println(i + CurrList);
+            System.out.println(i);
+            System.out.println(i);
+
         System.out.println("¬ведите название конвертируемой валюты");
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
         String InputName1 = br.readLine();
@@ -28,7 +34,7 @@ public class ClassInput extends Lists {
                 BuyIn = getBuyHolder().get(i);
                 SaleIn = getSaleHolder().get(i);
                 //value = true;
-
+                break;
             }
             else {
                 System.out.println("¬веденный тип валюты не найден");
