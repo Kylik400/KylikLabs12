@@ -12,7 +12,7 @@ public class ClassInput extends Lists {
     private static double BuyIn = 0;
     private static double SaleIn = 0;
     private static double Count = 0;
-    private boolean value;
+   // private boolean value;
 
 
 
@@ -27,12 +27,12 @@ public class ClassInput extends Lists {
 
                 BuyIn = getBuyHolder().get(i);
                 SaleIn = getSaleHolder().get(i);
-                value = true;
+                //value = true;
 
             }
             else {
                 System.out.println("Введенный тип валюты не найден");
-                value = false;
+               // value = false;
             }
         }
 
@@ -42,8 +42,8 @@ public class ClassInput extends Lists {
         double numb = Double.parseDouble(Number);
 
         Count = numb;
-
-        System.out.println("Введите то во что хотите конвертировать");
+        System.out.println("Полученное значение ===>   " + GetValue());
+        /*System.out.println("Введите то во что хотите конвертировать");
 
         String InputName2 = br.readLine();
 
@@ -51,7 +51,7 @@ public class ClassInput extends Lists {
             System.out.println("Полученное значение ===>   " + GetValue());
 
         }
-            else System.out.println("Введенный тип валюты не найден");
+            else System.out.println("Введенный тип валюты не найден");*/
 
     }
 
